@@ -1,0 +1,337 @@
+/*****COMMON CSS SECTION*****/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+	font-family :  sans-serif, arial;
+}
+html, body {
+
+	font-size: 14px;
+	font-weight: 400;
+	background: #000000;
+	color:#fff;
+}
+.container {
+	width: 1100px;
+	margin: 0px auto;
+	display: table;
+}
+.width-33 {
+	width: 33%;
+	float: left;
+	margin-top:30px;
+}
+.width-66 {
+	width: 66%;
+	float: left;
+	margin-top:30px;
+}
+
+hr.line{
+	border:1px solid #e20606;
+}
+
+/*****HEADER SECTION*****/
+
+section {
+	width: 100%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	height: 100vh;
+}
+
+.logo {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.name{
+	color:#33FFFF;
+}
+
+.span-col {
+	color: #33FF33;
+}
+
+nav {
+	float: right;
+}
+
+nav a {
+	
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 500;
+	margin-left: 20px;
+	color: #33FF33;
+}
+
+nav a:hover{
+	color:#FF0000;
+}
+
+/*****Main BANNER*****/
+#Home {
+	width: 100%;
+	
+	height: 100vh;
+}
+.width-45 {
+	float: left;
+	width: 50%;
+	margin-top:10vh;
+}
+
+
+.banner-section {
+	width: 100%;
+	float: left;
+}
+.banner-section h1 {
+	font-size: 48px;
+	margin-top: 10px;
+	font-weight: bolder;
+}
+.banner-section h2 {
+	font-size: 20px;
+	line-height: 25px;
+	margin-top: 10px;
+	font-weight: 400;
+}
+.banner-section a {
+	float: left;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 20px;
+	border-radius: 50%;
+	text-align: center;
+	border: 2px solid #33FF33;
+	color: #33FF33;
+	margin-left: 10px;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+}
+
+.btn-box {
+	margin-top:30px;
+    display: inline-block;
+    padding: 12px 28px;
+    background: #00FF33;
+    border-radius: 40px;
+    font-size: 15px;
+    text-align: center;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+   
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px rgb(239, 6, 6), 0 0 25px rgb(17, 241, 0), 0 0 50pc rgb(204, 2, 2), 0 0 100px rgb(51, 247, 1), 0 0 200px rgb(31, 193, 9);
+}
+   
+
+.banner-section a:hover{
+		border:2px solid #FF0000;
+		color:#FF0000;
+}
+
+/*ABOUT ME SECTION*/
+
+section {
+	width: 100%;
+	float: left;
+	padding: 110px 0px 110px 0px;
+}
+.width-100 {
+	width: 100%;
+	float: left;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.heading-text {
+	width: 100%;
+	float: left;
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #33FF33;
+}
+.about-img {
+	width: 100%;
+	padding: 0px 50px;
+	margin-top: 20px;
+}
+.about-us {
+	width: 100%;
+	float: left;
+	padding: 20px;
+}
+.about-us p {
+	font-size: 16px;
+	margin-top: 15px;
+	line-height: 27px;
+}
+
+
+/*****SKILL SECTION*****/
+#Skills{
+	width:100%;
+	height:100vh;
+}
+.skill {
+	margin-top: 30px;
+	font-size: 17px;
+}
+
+.skill span {
+	float: right;
+}
+
+.skill div {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+	background: #e7e7e7;
+	border-radius: 10px;
+}
+
+.skill div span {
+	background: #33FF33;
+	height: 5px;
+	float: left;
+}
+
+/*Projects SECTION*/
+#Projects {
+	width: 100%;
+	
+	height:120vh;
+	background-color:rgb(0, 0, 0) ;
+}
+
+.width-50 {
+	float: left;
+	width: 50%;
+	
+}
+.project {
+	padding: 30px;
+	margin-top: 25px;
+	background: #262626;
+	border-radius: 15px;
+	width: 95%;
+	float: left;
+}
+
+.project i {
+	font-size: 50px;
+	color: #33FF33;
+	width: 70px;
+	float: left;
+}
+
+.project h3 {
+	font-size: 25px;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+
+.project p {
+	font-size: 15px;
+	line-height: 25px;
+}
+
+
+
+
+
+/*CONTACT US SECTION*/
+#Contact{
+	width:100%;
+	height:100vh;
+}
+.contact form {
+	width: 66%;
+	margin: 0px auto;
+}
+.contact input,
+textarea {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #a1a1a1;
+}
+.contact textarea {
+	height: 80px;
+}
+.contact button {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	height: 40px;
+	padding: 10px;
+	background: #33FF33;
+	color: #070404;
+	
+	border: none;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.contact h3 {
+	font-size: 26px;
+	text-align: center;
+	margin-top: 60px;
+	color: #33FF33;
+}
+.contact h4 {
+	color:#33FF33;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 10px;
+}
+.contact p {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+
+/*****FOOTER SECTION*****/
+.footer {
+	background-color: #181818;
+	padding: 20px 0px 20px 0px;
+	width: 100%;
+	float: left;
+}
+.footer-sect {
+	color: #FFFFFF;
+}
+.footer-sect a {
+	color: #33FF33;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: center;
+}
+.social-icon a i {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #33FF33;
+	line-height: 50px;
+	font-size: 20px;
+	border-radius: 50%;
+}
+
+.heading-text:hover{
+	color:#FF0000;
+  
+}
