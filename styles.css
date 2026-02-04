@@ -208,7 +208,8 @@ section {
 	float: left;
 }
 
-/*Projects SECTION*/
+
+/* Projects SECTION */
 #Projects {
 	width: 100%;
 	
@@ -335,3 +336,17 @@ textarea {
 	color:#FF0000;
   
 }
+
+.project-title { color:#33FF33; }
+
+.tech { padding:4px 10px; border-radius:12px; font-size:12px; font-weight:600; }
+.tech.html { background:#e34c26; }
+.tech.css { background:#264de4; }
+.tech.js { background:#f0db4f; color:#000; }
+.tech.react { background:#61dafb; color:#000; }
+.tech.python { background:#306998; }
+.tech.java { background:#f89820; }
+.tech.django { background:#1405ed; }
+.tech.api { background:#6c757d; }
+.tech.swing { background:#1f77c4; }
+.github-btn { color:#33FF33; text-decoration:none; font-weight:bold; }
