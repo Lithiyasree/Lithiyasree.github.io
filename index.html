@@ -1,595 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R. Lithiyasree | Software Developer</title>
+<meta name="description" content="Portfolio of R. Lithiyasree, a Computer Science Engineering graduate and fresher software developer skilled in React, Django, Python and the MERN stack.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-<!-----HEADER SECTION------>
-<div class="container">
-  <div class="header">
-  <div class="width-33 logo">
-    Port <span class="span-col">folio</span>
-  </div>
-  <div class="width-66">
-    <nav>
-      <a href="#Home">Home</a>
-      <a href="#About">About </a>
-      <a href="#Skills">Skills</a>
-      <a href="#Projects">Projects</a>
-      <!-- <a href="#Contact">Contact</a>  -->
-    </nav>
-  </div>
-  </div>
-</div>
-<hr class="line">
 
-<!------MAIN BANNERR------>
-<section id="Home">
-  <div class="container ">
-    
-    <div class="width-45">
-      <div class="banner-section">
-              <h2>Welcome to my Portfolio,</h2>
-              <h1><span class="name">LITHIYASREE R</span></h1>
-              <h2><span class="span-col">Aspiring WEB DEVELOPER</span><br>Passionate Student at St. JOSEPH'S COLLEGE OF ENGINEERING.<br>Eager to Innovate, Excel, and
-                Elevate in the Tech World</h2>
-              <a href="https://leetcode.com/u/Lithiyasree/">
-                  <i class="fa-solid fa-code"></i>
-              </a>
-              <a href="http://www.skillrack.com/profile/407922/2ca2b977cc295c770d6eb9e826d181eebc61acdb" target="_blank" class="skillrack">
-                <i class="fa-solid fa-border-all"></i>
-              </a>
-              <a href="https://www.hackerrank.com/profile/r_lithiyasree12">
-                  <i class="fab fa-hackerrank"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/lithiyasree-r-5b7502260/">
-                  <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a href="https://www.codechef.com/users/lithiyasree">
-                <i class="fa-solid fa-closed-captioning" style="color: #28c605;"></i>
-              </a>
-              <a href="https://github.com/Lithiyasree">
-                  <i class="fa-brands fa-github"></i>
-              </a>
+<div class="scroll-progress"><div class="scroll-progress-bar" id="scrollProgressBar"></div></div>
 
-              
+<!-- ===== Navigation ===== -->
+<header>
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="logo">Lithiyasree<span> R</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+      <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <!-- <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a> -->
+  </nav>
+</header>
+
+<main>
+
+<!-- ===== Hero ===== -->
+<section id="home" class="hero">
+  <div class="hero-container">
+    <div class="hero-text fade-up">
+      <!-- <p class="hero-tag"><i class="fa-solid fa-circle-dot"></i> Open to Software Developer roles</p> -->
+      <h1>Hi, I'm <span>Lithiyasree R</span></h1>
+      <h2 class="hero-role">
+        <span id="typingText"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-intro">Computer Science Engineering graduate who likes turning ideas into clean, responsive, user-friendly web applications across React, Django and the MERN stack.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="https://drive.google.com/file/d/1RXY_HunnhTaJ8gMYjbYDckdVy0j_Soxh/view?usp=drive_link" class="btn btn-outline" id="resumeBtn">Download Resume <i class="fa-solid fa-arrow-down"></i></a>
       </div>
-
-      <div class="btn-box"><a href="https://drive.google.com/file/d/1IrxTTgx7bAbSt3LtnmNo-QjHqE3hqOzs/view?usp=drive_link" target="_blank">Download RESUME</a></div>
-      
-    
+      <div class="hero-socials">
+        <a href="https://github.com/Lithiyasree" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lithiyasree-r-5b7502260/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/u/Lithiyasree/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+        <a href="http://www.skillrack.com/profile/407922/2ca2b977cc295c770d6eb9e826d181eebc61acdb" target="_blank" rel="noopener" aria-label="SkillRack"><i class="fa-solid fa-border-all"></i></a>
+        <a href="https://www.hackerrank.com/profile/r_lithiyasree12" target="_blank" rel="noopener" aria-label="HackerRank"><i class="fa-brands fa-hackerrank"></i></a>
+        <a href="https://www.codechef.com/users/lithiyasree" target="_blank" rel="noopener" aria-label="CodeChef"><i class="fa-solid fa-closed-captioning"></i></a>
+      </div>
     </div>
 
-    <img class="pic" src="girl.jpg" alt="profile"  width="400px"  height="400px">
-    
-    
-      
-  </div>
-</section>
-<hr class="line">
-
-            
-
-<!------ABOUT ME SECTION------>
-<section  id="About">
-  <div class="main-section bg-lightgrey">
-    <div class="container">
-      <div class="width-50">
-        <img src="PROGRAM PIC.jpg" alt="image" class="about-img">
+    <div class="hero-photo fade-up">
+      <div class="photo-blob"></div>
+      <div class="photo-frame">
+        <!-- Replace this placeholder with once you have a photo -->
+        <img src="LITHIYASREE.jpeg" alt="Lithiyasree R"> 
+        <div class="photo-placeholder"><span>RL</span></div>
       </div>
-      <div class="width-50">
-        <div class="about-us">
-          <h2 class="heading-text">About Me</h2>
-          <h2>Aspiring <span class="span-col">WEB </span><span class="span-col">DEVELOPER</span></h2> 
-          <!-- <p><i class="fa fa-desktop"></i>  Hello! I'm Lithiyasree an aspiring DATA SCIENTIST currently pursuing B.E in Computer Science at St. Joseph's College of Engineering, Chennai.<br> My skills include HTML, CSS, Pandas, NumPy, Matplotlib, Tableau, Python, Java and C with a keen focus on continuous learning and growth.<br> I thrive on challenges and strive to create meaningful and impactful web applications.<br>  I am passionate about data-driven decision-making, AI, and solving real-world problems using data science techniques.</p> -->
-          <p><i class="fa fa-desktop"></i>  Hello! I’m Lithiyasree R, an aspiring <b>Web Developer</b> currently pursuing a <b>B.E. in Computer Science</b> at St. Joseph’s College of Engineering, Chennai.<br>
-            I have a strong foundation in <b>HTML, CSS, JavaScript, React, Django, MySQL, Python, Java, and C,</b> with a keen interest in building responsive, user-friendly, and scalable web applications.<br>
-            I am passionate about continuous learning, UI/UX improvement, and developing impactful full-stack applications.</p>
-        </div>
-      </div>
+      <!-- <div class="photo-card photo-card-top"><i class="fa-solid fa-graduation-cap"></i> CGPA 9.13</div>
+      <div class="photo-card photo-card-bottom"><i class="fa-solid fa-briefcase"></i> 3 Internships</div> -->
     </div>
   </div>
 </section>
-<hr class="line">
 
-   
-<!------SKILL SECTION------>
-<section id="Skills">
-  <div class="main-section">
-    <div class="container">
-      <h2 class="heading-text">My Skills</h2>
-      <div class="width-50">
-
-        <div class="skill">
-          <b><i class="fa-brands fa-html5"></i> HTML</b>
-          <span>90%</span>
-          <div>
-            <span style="width:90%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <b><i class="fa-brands fa-css3-alt"></i> CSS</b>
-          <span>90%</span>
-          <div>
-            <span style="width:90%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <b><i class="fa-brands fa-js"></i> JavaScript</b>
-          <span>85%</span>
-          <div>
-            <span style="width:85%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <b><i class="fa-brands fa-python"></i> Python Programming</b>
-          <span>95%</span>
-          <div>
-            <span style="width:95%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <b><i class="fa-brands fa-java"></i> Java Programming</b>
-          <span>90%</span>
-          <div>
-            <span style="width:90%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <b><i class="fa-brands fa-python"></i> ReactJS</b>
-          <span>80%</span>
-          <div>
-            <span style="width:80%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <b><i class="fa-brands fa-cuttlefish"></i> MySQL</b>
-          <span>85%</span>
-          <div>
-            <span style="width:85%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <b><i class="fa-brands fa-python"></i> Django</b>
-          <span>80%</span>
-          <div>
-            <span style="width:80%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <b><i class="fa-brands fa-cuttlefish"></i> C Programming</b>
-          <span>85%</span>
-          <div>
-            <span style="width:85%"></span>
-          </div>
-        </div>
-
-       
-      </div>
+<!-- ===== About ===== -->
+<section id="about" class="section">
+  <p class="section-eyebrow fade-up">Get to know me</p>
+  <h2 class="section-title fade-up">About Me</h2>
+  <div class="about-grid fade-up">
+    <div class="about-text">
+      <p>I'm a Computer Science Engineering graduate from <strong>St. Joseph's College of Engineering</strong>, Chennai, graduating in 2026 with a CGPA of <strong>9.13/10</strong>. My interest in software development grew out of curiosity about how ideas become real, working products.</p>
+      <p>Through internships in <strong>MERN stack development</strong>, <strong>Python development</strong>, and <strong>machine learning</strong>, I've built hands-on experience across the stack from React interfaces to Django and Node.js backends, SQL and NoSQL databases, and basic data analysis with Pandas and NumPy.</p>
+      <p>I'm currently looking for a fresher software developer role where I can keep learning, keep building, and contribute from day one.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card"><span class="stat-num">6+</span><span class="stat-label">Projects</span></div>
+      <div class="stat-card"><span class="stat-num">3</span><span class="stat-label">Internships</span></div>
+      <div class="stat-card"><span class="stat-num">9.13</span><span class="stat-label">CGPA</span></div>
+      <div class="stat-card"><span class="stat-num">9+</span><span class="stat-label">Certifications</span></div>
     </div>
   </div>
 </section>
-<hr class="line">
 
-<!------PROJECTS SECTION------>
-<!-- 
+<!-- ===== Skills ===== -->
+<!-- <section id="skills" class="section section-tint">
+  <p class="section-eyebrow fade-up">What I work with</p>
+  <h2 class="section-title fade-up">Skills</h2>
 
-<section id="Projects">
-  <div class="main-section">
-    <div class="container">
-      <h2 class="heading-text">My Projects</h2>
-
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-solid fa-book"></i>
-          <h3>LIBRARY MANAGEMENT SYSTEM</h3>
-          <p>JAVA, SWING, JDBC, MYSQL<br>
-            The Library Management System (LMS) GUI is a Java-based GUI DESKTOP APPLICATION that efficiently manages library operations using JDBC and MySQL, providing a user-friendly Graphical User Interface (GUI).<br>
-            This system is designed for both administrators (librarians) and users (students/members), offering role-based access to different functionalities.<br>
-            The system allows librarians to add, update, delete, and search books, track borrowed and returned books, manage due dates and fines, and maintain user records.<br>
-            The JDBC API enables seamless interaction between the Java application and the MySQL database, ensuring efficient data retrieval, storage, and updates.</p>
-        </div>
-      </div>
-
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-solid fa-machine"></i>
-          <h3>ATM MACHINE SIMULATION</h3>
-          <p>Python, GUI<br>
-            This is a simple ATM simulation program built using Python that allows users to perform basic banking operations such as balance inquiry, cash withdrawal, deposit, PIN change, and transaction history.<br> The system uses file handling and maintains transaction history for each session.</p>
-        </div>
-      </div>
-
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-solid fa-dashboard"></i>
-          <h3>CAR SALES DASHBOARD</h3>
-          <p>TABLEAU<br>
-            This project features a dynamic and interactive Car Sales Dashboard designed using Tableau. It enables car dealerships to analyze and track sales performance, helping to make data-driven decisions and understand sales trends over time.</p>
-        </div>
-      </div>
-
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-solid fa-dashboard"></i>
-          <h3>HR ANALYTICS DASHBOARD</h3>
-          <p>EXCEL<br>
-            An interactive HR Analytics Dashboard providing valuable insights into employee data, with a focus on attrition trends and key demographics. This dashboard helps HR teams make data-driven decisions for better workforce management.</p>
-        </div>
-      </div>
-
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-solid fa-calculator"></i>
-          <h3>Calculator Using Python</h3>
-          <p>A simple calculator with basic arithmetic operations.<br>
-            Prompt the user to input two numbers and an operation choice.<br>
-            Perform the calculation and display the result.
-          </p>
-        </div>
-      </div>
-
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-solid fa-calculator"></i>
-          <h3>STUDENTS GRADE CALCULATOR</h3>
-          <p>a Java Console program for a Student Grade Calculator that works for both schools and colleges.<br> It calculates grades based on user-inputted marks and displays the final grade.
-          </p>
-        </div>
-      </div>
-
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-solid fa-hand-scissors"></i>
-          <h3>Rock-Paper-Scissors Game Using Python</h3>
-          <p>Prompt the user to choose rock, paper, or scissors.<br>Display the result, whether the user wins, loses, or it's a tie.</p>
-        </div>
-      </div>
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-regular fa-address-book"></i>
-          <h3>Contact-Book Using Python</h3>
-          <p> A Contact Book application to store personal details and manage contacts with features for adding, viewing, searching, updating, and deleting entries, all through a user-friendly interface</p>
-        </div>
-      </div>
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-solid fa-globe"></i>
-          <h3>Landing Page Using HTML & CSS</h3>
-          <p>A landing page project allows me to apply HTML and CSS skills,
-            encouraging my creativity while ensuring a visually appealing and user-friendly design.</p>
-        </div>
-      </div>
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-regular fa-address-card"></i>
-          <h3>Portfolio Using HTML & CSS</h3>
-          <p> My portfolio website, handcrafted with HTML and CSS, stands as a testament to my dedication to detail and design, offering a window into my digital craftsmanship and creative vision.</p>
-        </div>
-      </div>
-      <div class="width-50">
-        <div class="project">
-          <i class="fa-solid fa-calculator"></i>
-          <h3>Calculator Using HTML, CSS, & JS</h3>
-          <p>An interactive interface with buttons for addition, subtraction, multiplication, and division
-            operations. This calculator have an display screen to show user input and results</p>
-        </div>
-      </div>
+  <div class="skills-block fade-up">
+    <h3>Languages</h3>
+    <div class="tag-row">
+      <span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span>
+      <span class="tag">SQL</span>
     </div>
   </div>
-</section>
-<hr class="line"> -->
-
-<!-- ----PROJECTS SECTION----
-<section id="Projects">
-  <div class="main-section">
-    <div class="container">
-      <h2 class="heading-text">My Projects</h2>
-
-      <div class="projects-grid">
-
-        <div class="project">
-          <i class="fa-solid fa-book"></i>
-          <h3>LIBRARY MANAGEMENT SYSTEM</h3>
-          <p>JAVA, SWING, JDBC, MYSQL<br>
-            A Java-based GUI desktop application that efficiently manages library operations using JDBC and MySQL.<br>
-            Includes book management, user records, fines, and transactions.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-solid fa-credit-card"></i>
-          <h3>ATM MACHINE SIMULATION</h3>
-          <p>Python, GUI<br>
-            A Python-based ATM simulator that performs balance inquiries, withdrawals, deposits, and PIN changes with a transaction history feature.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-solid fa-chart-line"></i>
-          <h3>CAR SALES DASHBOARD</h3>
-          <p>TABLEAU<br>
-            An interactive Tableau dashboard to analyze and track car sales, helping dealerships make data-driven decisions.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-solid fa-user-tie"></i>
-          <h3>HR ANALYTICS DASHBOARD</h3>
-          <p>EXCEL<br>
-            An interactive HR analytics dashboard with employee insights, attrition trends, and workforce demographics.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-solid fa-calculator"></i>
-          <h3>Calculator Using Python</h3>
-          <p>A Python-based calculator supporting basic arithmetic operations.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <h3>STUDENT GRADE CALCULATOR</h3>
-          <p>A Java Console program to compute grades for school and college students based on inputted marks.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-solid fa-hand-scissors"></i>
-          <h3>Rock-Paper-Scissors Game Using Python</h3>
-          <p>A simple Python game where the user competes against the computer.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-regular fa-address-book"></i>
-          <h3>Contact-Book Using Python</h3>
-          <p>A contact management application to add, search, update, and delete contact details.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-solid fa-globe"></i>
-          <h3>Landing Page Using HTML & CSS</h3>
-          <p>A visually appealing landing page demonstrating HTML & CSS skills.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-regular fa-address-card"></i>
-          <h3>Portfolio Using HTML & CSS</h3>
-          <p>A personal portfolio showcasing projects and skills, crafted with HTML & CSS.</p>
-        </div>
-
-        <div class="project">
-          <i class="fa-solid fa-calculator"></i>
-          <h3>Calculator Using HTML, CSS, & JS</h3>
-          <p>An interactive web calculator with a user-friendly interface.</p>
-        </div>
-
-      </div>
-    </div>
+  <div class="skills-block fade-up">
+    <h3>Frontend</h3>
+    <div class="tag-row"><span class="tag">React</span><span class="tag">Bootstrap</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div>
+  </div>
+  <div class="skills-block fade-up">
+    <h3>Backend</h3>
+    <div class="tag-row"><span class="tag">Django</span><span class="tag">Node.js</span><span class="tag">Express.js</span></div>
+  </div>
+  <div class="skills-block fade-up">
+    <h3>Database</h3>
+    <div class="tag-row"><span class="tag">MySQL</span><span class="tag">MongoDB</span></div>
+  </div>
+  <div class="skills-block fade-up">
+    <h3>Tools</h3>
+    <div class="tag-row"><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Postman</span></div>
   </div>
 </section> -->
-<!-- <hr class="line"> -->
 
+<!-- ===== Skills ===== -->
+<section id="skills" class="section section-tint">
+    <p class="section-eyebrow fade-up">What I work with</p>
+    <h2 class="section-title fade-up">Skills</h2>
 
+    <div class="skills-grid fade-up">
 
-<!------PROJECTS SECTION------>
-<section id="Projects">
-  <div class="main-section">
-    <div class="container">
-      <h2 class="heading-text">My Projects</h2>
+        <!-- Languages -->
+        <div class="skill-category">
+            <h3><i class="fa-solid fa-code"></i> Languages</h3>
 
-      <div class="projects-grid">
+            <div class="skill">
+                <div class="skill-title"><span>Python</span><span>90%</span></div>
+                <div class="skill-bar"><span style="width:90%"></span></div>
+            </div>
 
-        <!-- REACT -->
-        <div class="project">
-          <i class="fa-solid fa-film"></i>
-          <h3 class="project-title">Movie Guide App</h3>
-          <p>
-            <span class="tech react">React</span>
-            <span class="tech api">API</span><br><br>
-            A React-based application that fetches and displays movie details using public APIs.
-          </p>
-          <br>
-          <a href="https://github.com/Lithiyasree/MOVIE_GUIDE" target="_blank" class="github-btn">
-            <i class="fa-brands fa-github"></i> 
-          </a>
+            <div class="skill">
+                <div class="skill-title"><span>Java</span><span>80%</span></div>
+                <div class="skill-bar"><span style="width:80%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title"><span>JavaScript</span><span>85%</span></div>
+                <div class="skill-bar"><span style="width:85%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title"><span>SQL</span><span>88%</span></div>
+                <div class="skill-bar"><span style="width:88%"></span></div>
+            </div>
         </div>
 
-        <div class="project">
-          <i class="fa-solid fa-cloud-sun"></i>
-          <h3 class="project-title">Weather Forecast App</h3>
-          <p>
-            <span class="tech react">React</span>
-            <span class="tech api">OpenWeather API</span><br><br>
-            A real-time weather application showing temperature, humidity, and wind speed.
-          </p>
-          <br>
-          <a href="https://github.com/Lithiyasree/WEATHER_APP" target="_blank" class="github-btn">
-            <i class="fa-brands fa-github"></i> 
-          </a>
+        <!-- Frontend -->
+        <div class="skill-category">
+            <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+
+            <div class="skill">
+                <div class="skill-title"><span>HTML</span><span>95%</span></div>
+                <div class="skill-bar"><span style="width:95%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title"><span>CSS</span><span>90%</span></div>
+                <div class="skill-bar"><span style="width:90%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title"><span>React</span><span>88%</span></div>
+                <div class="skill-bar"><span style="width:88%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title"><span>Bootstrap</span><span>85%</span></div>
+                <div class="skill-bar"><span style="width:85%"></span></div>
+            </div>
         </div>
 
+        <!-- Backend -->
+        <div class="skill-category">
+            <h3><i class="fa-solid fa-server"></i> Backend</h3>
 
-         <!-- DJANGO -->
-        <div class="project">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <h3 class="project-title">E-Commerce Website</h3>
-          <p>
-            <span class="tech django">Django</span>
-            <span class="tech python">Python</span><br><br>
-            A full-featured e-commerce platform with authentication, product listings, and order management.
-          </p>
-          <br>
-          <a href="https://github.com/Lithiyasree/ecommerce-django" target="_blank" class="github-btn">
-            <i class="fa-brands fa-github"></i>
-          </a>
+            <div class="skill">
+                <div class="skill-title"><span>Django</span><span>85%</span></div>
+                <div class="skill-bar"><span style="width:85%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title"><span>Node.js</span><span>80%</span></div>
+                <div class="skill-bar"><span style="width:80%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title"><span>Express.js</span><span>80%</span></div>
+                <div class="skill-bar"><span style="width:80%"></span></div>
+            </div>
         </div>
 
-        <div class="project">
-          <i class="fa-solid fa-list-check"></i>
-          <h3 class="project-title">Multi User Todo Web App</h3>
-          <p>
-            <span class="tech django">Django</span>
-            <span class="tech python">Python</span><br><br>
-            A secure multi-user task management system with login and personalized todo lists.
-          </p>
-          <br>
-          <a href="https://github.com/Lithiyasree/MULTI_USER_TODO_WEB_APP" target="_blank" class="github-btn">
-            <i class="fa-brands fa-github"></i> 
-          </a>
+        <!-- Database-->
+        <div class="skill-category">
+            <h3><i class="fa-solid fa-database"></i> Database</h3>
+
+            <div class="skill">
+                <div class="skill-title"><span>MySQL</span><span>90%</span></div>
+                <div class="skill-bar"><span style="width:90%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title"><span>MongoDB</span><span>82%</span></div>
+                <div class="skill-bar"><span style="width:82%"></span></div>
+            </div>
         </div>
 
+        <!-- Tools  -->
+        <div class="skill-category">
+            <h3><i class="fa-solid fa-tools"></i> Tools</h3>
+            
+            <div class="skill">
+                <div class="skill-title"><span>GitHub</span><span>85%</span></div>
+                <div class="skill-bar"><span style="width:85%"></span></div>
+            </div>
 
-        <!-- WEB DEVELOPMENT -->
-        <div class="project">
-          <i class="fa-solid fa-temperature-high"></i>
-          <h3 class="project-title">Temperature Converter</h3>
-          <p>
-            <span class="tech html">HTML</span>
-            <span class="tech css">CSS</span>
-            <span class="tech js">JavaScript</span><br><br>
-            A responsive web application to convert temperatures between Celsius, Fahrenheit, and Kelvin.
-          </p>
-          <br>
-          <a href="https://github.com/Lithiyasree/WEB_DEVELOPMENT-TEMPERATURE-CONVERTER" target="_blank" class="github-btn">
-            <i class="fa-brands fa-github"></i> 
-          </a>
+            <div class="skill">
+                <div class="skill-title"><span>Postman</span><span>80%</span></div>
+                <div class="skill-bar"><span style="width:80%"></span></div>
+            </div>
         </div>
-
-        <div class="project">
-          <i class="fa-solid fa-calculator"></i>
-          <h3 class="project-title">Web Calculator</h3>
-          <p>
-            <span class="tech html">HTML</span>
-            <span class="tech css">CSS</span>
-            <span class="tech js">JavaScript</span><br><br>
-            An interactive calculator with a clean UI supporting basic arithmetic operations.
-          </p>
-          <br>
-          <a href="https://github.com/Lithiyasree/WEB_DEVELOPMENT_CALCULATOR" target="_blank" class="github-btn">
-            <i class="fa-brands fa-github"></i> 
-          </a>
-        </div>        
-
-        <!-- PYTHON -->
-        <div class="project">
-          <i class="fa-solid fa-credit-card"></i>
-          <h3 class="project-title">ATM Machine Simulation</h3>
-          <p>
-            <span class="tech python">Python</span><br><br>
-            A console-based ATM simulation supporting withdrawals, deposits, and transaction history.
-          </p>
-          <br>
-          <a href="https://github.com/Lithiyasree/ATM-MACHINE-SIMULATION" target="_blank" class="github-btn">
-            <i class="fa-brands fa-github"></i> 
-          </a>
-        </div>
-
-        <!-- JAVA -->
-        <div class="project">
-          <i class="fa-solid fa-building-columns"></i>
-          <h3 class="project-title">Library Hub (GUI)</h3>
-          <p>
-            <span class="tech java">Java</span>
-            <span class="tech swing">Swing</span><br><br>
-            A GUI-based library application for managing books and basic user operations.
-          </p>
-          <br>
-          <a href="https://github.com/Lithiyasree/LIBRARY_HUB" target="_blank" class="github-btn">
-            <i class="fa-brands fa-github"></i> 
-          </a>
-        </div>
-
-        <div class="project">
-          <i class="fa-solid fa-puzzle-piece"></i>
-          <h3 class="project-title">Sudoku Solver</h3>
-          <p>
-            <span class="tech java">Java</span>
-            <span class="tech swing">Swing</span><br><br>
-            A Sudoku puzzle solver implemented using backtracking algorithms.
-          </p>
-          <br>
-          <a href="https://github.com/Lithiyasree/JAVA-SUDOKU-SOLVER" target="_blank" class="github-btn">
-            <i class="fa-brands fa-github"></i> 
-          </a>
-        </div>
-
+    </div>
+</section>
+<!-- ===== Experience ===== -->
+<section id="experience" class="section">
+  <p class="section-eyebrow fade-up">My journey so far</p>
+  <h2 class="section-title fade-up">Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <span class="timeline-date">Mar 2026 – Apr 2026</span>
+        <h3>Full Stack Development Intern</h3>
+        <p class="timeline-org">Web Stack Academy · Virtual</p>
+        <p>Built web application functionalities using HTML, CSS, JavaScript and React. Gained understanding of database connectivity, API integration and component-based development within the MERN stack.</p>
+      </div>
+    </div>
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <span class="timeline-date">Feb 2026 – Apr 2026</span>
+        <h3>Python Development Intern</h3>
+        <p class="timeline-org">Infosys Springboard · Virtual</p>
+        <p>Learned Python core concepts and OOP principles, with hands-on experience in multi-threading, SQLite and Streamlit, focused on project development, problem-solving and debugging.</p>
+      </div>
+    </div>
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <span class="timeline-date">Dec 2024 – Jan 2025</span>
+        <h3>Machine Learning Intern</h3>
+        <p class="timeline-org">CSIR-CSIO · Chennai</p>
+        <p>Worked with real-world datasets for preprocessing, cleaning and handling missing values, using Pandas, NumPy and Matplotlib for basic data analysis and visualization.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ===== Projects ===== -->
+<section id="projects" class="section section-tint">
+  <p class="section-eyebrow fade-up">Things I've built</p>
+  <h2 class="section-title fade-up">Projects</h2>
+  <div class="projects-grid">
 
-<!-------------CONTACT US SECTION----------------------->
-<!-- 
-<section id="Contact">
-  <div class="main-section contact bg-lightgrey">
-    <div class="container">
-      <h2 class="heading-text">Get In Touch</h2>
-      <div class="width-100">
-        <form>
-          <input type="text" placeholder="Full Name...">
-          <input type="text" placeholder="Full Email Id...">
-          <input type="text" placeholder="Full Mobile No...">
-          <textarea placeholder="Enter Address..."></textarea>
-          <button type="submit">Submit</button>
-        </form>
+    <div class="project-card fade-up">
+      <div class="project-top"><i class="fa-solid fa-cart-shopping"></i></div>
+      <div class="project-body">
+        <h3>Mini E-Commerce</h3>
+        <div class="badges"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div>
+        <p>A MERN stack e-commerce app with product listing, cart management, quantity updates and order placement, plus search and toast notifications.</p>
+        <div class="project-links"><a href="https://github.com/Lithiyasree/MINI_ECOMMERCE_MERN"><i class="fa-brands fa-github"></i> Code</a></div>
+        <!-- <a href="#">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
       </div>
-      <div class="width-33">
-        <h3>
-          <i class="fa fa-map-marker"></i>
-        </h3>
-        <h4>Address</h4>
-        <p>Velachery, Chennai</p>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-top"><i class="fa-solid fa-bag-shopping"></i></div>
+      <div class="project-body">
+        <h3>Django E-Commerce</h3>
+        <div class="badges"><span>Django</span><span>MySQL</span><span>JavaScript</span></div>
+        <p>An e-commerce app with user authentication, category-wise listings, product details, cart and wishlist functionality.</p>
+        <div class="project-links"><a href="https://github.com/Lithiyasree/ECOMMERCE_SMART-SHOP_WEB_APP"><i class="fa-brands fa-github"></i> Code</a></div>
       </div>
-      <div class="width-33">
-        <h3>
-          <i class="fa fa-phone"></i>
-        </h3>
-        <h4>Phone</h4>
-        <p>+91 9600135053</p>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-top"><i class="fa-solid fa-utensils"></i></div>
+      <div class="project-body">
+        <h3>FoodHub POS</h3>
+        <div class="badges"><span>React.js</span><span>Hooks</span><span>LocalStorage</span></div>
+        <p>A restaurant POS app with cart management, receipt generation, order history, search and category filters.</p>
+        <div class="project-links"><a href="https://github.com/Lithiyasree/FOOD_HUB_POS"><i class="fa-brands fa-github"></i> Code</a></div>
       </div>
-      <div class="width-33">
-        <h3>
-          <i class="fa-solid fa-envelope"></i>
-        </h3>
-        <h4>Email</h4>
-        <p>r.lithiyasree12@gmail.com</p>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-top"><i class="fa-solid fa-film"></i></div>
+      <div class="project-body">
+        <h3>Movie Guide</h3>
+        <div class="badges"><span>React.js</span><span>TMDb API</span><span>React Router</span></div>
+        <p>A movie discovery app showing popular, top-rated and upcoming titles, with search and detailed pages.</p>
+        <div class="project-links"><a href="https://github.com/Lithiyasree/MOVIE_GUIDE"><i class="fa-brands fa-github"></i> Code</a></div>
       </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-top"><i class="fa-solid fa-file-lines"></i></div>
+      <div class="project-body">
+        <h3>Parallel Text Handling Processor</h3>
+        <div class="badges"><span>Python</span><span>SQLite</span><span>Multi-threading</span></div>
+        <p>A multi-threaded processor for large text datasets, with sentiment scoring, keyword search and CSV export.</p>
+        <div class="project-links"><a href="https://github.com/Lithiyasree/Python-Parallel_Text_Handling_Processor"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-top"><i class="fa-solid fa-dna"></i></div>
+      <div class="project-body">
+        <h3>Fingerprint-Based Blood Group Detection</h3>
+        <div class="badges"><span>Deep Learning</span><span>CNN</span><span>Grad-CAM</span></div>
+        <p>A CNN model predicting blood groups from fingerprint patterns, with Grad-CAM for visual explanation.</p>
+        <div class="project-links"><a href="https://github.com/Lithiyasree/FINGERPRINT_BASED_BLOOD_GROUP_PREDICTION"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Education ===== -->
+<section id="education" class="section">
+  <p class="section-eyebrow fade-up">Academic background</p>
+  <h2 class="section-title fade-up">Education</h2>
+  <div class="education-card fade-up">
+    <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+    <div class="edu-info">
+      <h3>Bachelor of Engineering</h3>
+      <p class="edu-major">Computer Science &amp; Engineering</p>
+      <p class="edu-college">St. Joseph's College of Engineering, OMR, Chennai</p>
+      <p class="edu-dates">November 2022 – May 2026</p>
+    </div>
+    <div class="edu-cgpa"><span class="cgpa-num">9.13</span><span class="cgpa-label">CGPA / 10</span></div>
+  </div>
+</section>
+
+<!-- ===== Certifications ===== -->
+<section id="certifications" class="section section-tint">
+  <p class="section-eyebrow fade-up">Continuous learning</p>
+  <h2 class="section-title fade-up">Certifications</h2>
+  <div class="certs-grid">
+    <div class="cert-card fade-up" data-cert-image="https://drive.google.com/file/d/1pwdMIexqPKP83DIXb5-k_fV1puFDh7_J/preview"><i class="fa-brands fa-python" ></i><h3>Python Foundation Certification</h3><p>Infosys Springboard · Dec 2025</p></div>
+    <div class="cert-card fade-up" data-cert-image="https://drive.google.com/file/d/11h8ZF-BkzAEG70N0ioc1wpNSNOUF7qWm/preview"><i class="fa-brands fa-python"></i><h3>Programming, Data Structures &amp; Algorithms Using Python</h3><p>NPTEL · Jan – Mar 2026</p></div>
+    <div class="cert-card fade-up" data-cert-image="https://drive.google.com/file/d/1AaNa4K47QZkMOB_INFZGYTxVr8Ja_mQm/preview"><i class="fa-brands fa-react"></i><h3>React JS</h3><p>Infosys Springboard · Nov 2025</p></div>
+    <div class="cert-card fade-up" data-cert-image="https://drive.google.com/file/d/1GXBfzLzqvTpj8ura0w34cvTw7fFE0xed/preview"><i class="fa-brands fa-js"></i><h3>JavaScript Essentials 1</h3><p>Cisco Networking Academy · Sep 2025</p></div>
+    <div class="cert-card fade-up" data-cert-image="https://drive.google.com/file/d/1gSbbmMTgvS8DIwzDDycat8BiISnPLDn6/preview"><i class="fa-solid fa-database"></i><h3>Database Management System (Elite)</h3><p>NPTEL · Jul 2025</p></div>
+    <div class="cert-card fade-up" data-cert-image="https://drive.google.com/file/d/1LVKrnqy_JP-CEHKSpL0GudUy_hHNbleW/preview"><i class="fa-solid fa-globe"></i><h3>Introduction to Front-End Development</h3><p>Coursera (META) · Dec 2023</p></div>
+    <div class="cert-card fade-up" data-cert-image="https://drive.google.com/file/d/1iCTNJC1iTH_9442iBmhDevgbDLVIN6Ea/preview"><i class="fa-brands fa-java"></i><h3>Java Programming Fundamentals</h3><p>Infosys Springboard · Dec 2023</p></div>
+    <div class="cert-card fade-up" data-cert-image="https://drive.google.com/file/d/1XRA_ipsWnb5H4XoS0iN3cJ-e5ZAb0hEu/preview"><i class="fa-brands fa-python"></i><h3>The Joy of Computing Using Python (Elite + Silver)</h3><p>NPTEL · Jul – Oct 2024</p></div>
+    <div class="cert-card fade-up" data-cert-image="https://drive.google.com/file/d/1us9AAygPs-dmHNy4XhpA1nrfmFzwV-t8/preview"><i class="fa-solid fa-code"></i><h3>Problem Solving Through Programming in C</h3><p>NPTEL · Jul – Oct 2023</p></div>
+  </div>
+  <p class="certs-hint fade-up">Tap a certificate for a closer look</p>
+  <div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-label="Certificate details">
+    <div class="cert-modal-content">
+      <button class="cert-modal-close" id="certModalClose" aria-label="Close">&times;</button>
+      <div class="cert-modal-body" id="certModalBody"></div>
     </div>
   </div>
 </section>
-<hr class="line">
- -->
 
-<!-- ----FOOTER SECTION------>
+<!-- ===== Achievements ===== -->
+<section id="achievements" class="section">
+  <p class="section-eyebrow fade-up">Numbers that speak</p>
+  <h2 class="section-title fade-up">Achievements</h2>
+  <div class="counters-grid">
+    <div class="counter-card fade-up"><span class="counter-num" data-target="370">0</span><span>+</span><p>LeetCode Problems</p></div>
+    <div class="counter-card fade-up"><span class="counter-num" data-target="1900">0</span><span>+</span><p>SkillRack Problems</p></div>
+    <div class="counter-card fade-up"><span class="counter-num" data-target="100">0</span><span></span><p>HackerRank Problems</p></div>
+    <div class="counter-card fade-up"><span class="counter-num" data-target="30">0</span><span></span><p>CodeChef Problems</p></div>
+  </div>
+  <div class="achievements-list">
+    <div class="achievement-item fade-up"><i class="fa-solid fa-trophy"></i><p><strong>2nd Place</strong> — CSI Code Trivia Shadow Quiz</p></div>
+    <div class="achievement-item fade-up"><i class="fa-solid fa-lightbulb"></i><p><strong>Participant</strong> — IEEE CodeQuest'23</p></div>
+    <div class="achievement-item fade-up"><i class="fa-solid fa-rocket"></i><p><strong>Participant</strong> — IEEE IdeaQuest'24</p></div>
+  </div>
+</section>
 
-  <!-- <div class="footer">
-    <div class="container">
-      <div class="footer-sect social-icon width-50">
-        <a href="#">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
-      <div class="footer-sect mt-20 width-50">CopyRight © 2024 Portfolio Lithiyasree R . All Rights Reserved</div>
+<!-- ===== Contact ===== -->
+<section id="contact" class="section section-tint">
+  <p class="section-eyebrow fade-up">Let's connect</p>
+  <h2 class="section-title fade-up">Contact Me</h2>
+  <div class="contact-grid">
+    <div class="contact-info fade-up">
+      <a href="mailto:r.lithiyasree12@gmail.com" class="contact-item"><i class="fa-solid fa-envelope"></i><div><span>Email</span><strong>r.lithiyasree12@gmail.com</strong></div></a>
+      <a href="tel:+919600135053" class="contact-item"><i class="fa-solid fa-phone"></i><div><span>Phone</span><strong>+91 9600135053</strong></div></a>
+      <div class="contact-item"><i class="fa-solid fa-location-dot"></i><div><span>Location</span><strong>Chennai, Tamil Nadu</strong></div></div>
+      <a href="https://github.com/Lithiyasree" target="_blank" rel="noopener" class="contact-item"><i class="fa-brands fa-github"></i><div><span>GitHub</span><strong>View Profile</strong></div></a>
+      <a href="https://www.linkedin.com/in/lithiyasree-r-5b7502260/" target="_blank" rel="noopener" class="contact-item"><i class="fa-brands fa-linkedin-in"></i><div><span>LinkedIn</span><strong>Connect with me</strong></div></a>
     </div>
-  </div> -->
 
+    <!-- Replace YOUR_FORM_ID with your Formspree form ID from https://formspree.io -->
+    <form class="contact-form fade-up" id="contactForm" action="https://formspree.io/f/mdaqkvgp" method="POST" novalidate>
+      <div class="form-group"><input type="text" id="name" name="name" required placeholder=" "><label for="name">Your Name</label></div>
+      <div class="form-group"><input type="email" id="email" name="email" required placeholder=" "><label for="email">Your Email</label></div>
+      <div class="form-group"><input type="text" id="subject" name="subject" required placeholder=" "><label for="subject">Subject</label></div>
+      <div class="form-group"><textarea id="message" name="message" rows="5" required placeholder=" "></textarea><label for="message">Your Message</label></div>
+      <button type="submit" class="btn btn-primary full-width">Send Message</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
 
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <p class="footer-credit">Designed &amp; Developed by <strong>R. Lithiyasree</strong></p>
+  <p class="footer-copy">© <span id="year"></span> All rights reserved.</p>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
 </body>
 </html>
